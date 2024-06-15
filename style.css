@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a6d0e2;
+    min-height: 100vh;
+}
+
+.caixa1{
+    max-width: 1200px;
+    width: 95%;
+}
+
+.caixa2 .image-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    grid-template-columns: repeat(10, 1fr);    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.caixa2 .image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.caixa2 .image-list .image-item {
+    object-fit: cover;
+}
